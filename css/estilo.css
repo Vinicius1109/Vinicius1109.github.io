@@ -1,0 +1,30 @@
+
+body{
+	background-image: url(../imagens/fundo.png);
+	background-size: 100%;
+
+}
+
+h1{
+	color: white;
+	font-size: 100px;
+  	font-family: 'Alfa Slab One', cursive;	
+	top: 130px;
+	left: 390px;
+	position: relative;
+	-webkit-text-stroke-width: 0.1px;
+	-webkit-text-stroke-color: black;
+	
+}
+h2{
+	color: white;
+	font-size: 40px;
+	font-family: 'Alfa Slab One', cursive;
+	top: 95px;
+	left: 230px;
+	position: relative;
+	-webkit-text-stroke-width: 0.1px;
+	-webkit-text-stroke-color: black;
+
+
+}
