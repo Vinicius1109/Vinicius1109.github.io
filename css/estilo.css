@@ -8,23 +8,79 @@ body{
 h1{
 	color: white;
 	font-size: 100px;
-  	font-family: 'Alfa Slab One', cursive;	
+  	font-family: 'Fira Sans', sans-serif;
 	top: 130px;
 	left: 390px;
 	position: relative;
-	-webkit-text-stroke-width: 0.1px;
-	-webkit-text-stroke-color: black;
+	background-color: rgba(0,0,0,0.5);
+	width: fit-content;
+	padding: 10px;
+
 	
 }
 h2{
 	color: white;
 	font-size: 40px;
-	font-family: 'Alfa Slab One', cursive;
+	font-family: 'Fira Sans', sans-serif;
 	top: 95px;
-	left: 230px;
+	left: 260px;
 	position: relative;
-	-webkit-text-stroke-width: 0.1px;
-	-webkit-text-stroke-color: black;
+	background-color: rgba(0,0,0,0.5);
+	width: fit-content;
+	padding: 10px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  
 
+}
+li {
+  float: right;
+
+}
+li a, .erroo {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 26px;
+  text-decoration: none;
+
+}
+li a:hover, .erro:hover .erroo {
+  background-color: gray;
+
+}
+li.erro {
+  display: inline-block;
+
+}
+.menuzinho {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+.menuzinho a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+.menuzinho a:hover {
+	background-color: darkgray;
+
+}
+.erro:hover .menuzinho {
+  display: block;
 
 }
