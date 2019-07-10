@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+.resposta{
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    color: orange;
+}
+
+.errada{ /*Vermelho e Amarelo*/
+    background: yellow;
+    border: 2px dotted orangered;
+    outline: 2px deshed red;
+    color: red;
+}
+.correta{ /*Verde e Azul*/
+    background-color: green;
+    border: 2px dotted linegreen;
+    outline: 2px deshed darkgreen;
+    color: orange;
+
+}
