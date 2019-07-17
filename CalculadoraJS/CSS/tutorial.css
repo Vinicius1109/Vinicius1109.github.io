@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient(to right, black ,gray, black);
+color:white;
+
+}
+
+img{
+    display:block;
+    margin: 0 auto;
+}
+
+#divCentral{
+
+    display:block;
+    margin: 0 auto; 
+    margin-top: 20px;
+    width: 400px;
+}
+
+#demo1{
+    text-align: center;
+}
+
+#demo2{
+    text-align: center;
+}
