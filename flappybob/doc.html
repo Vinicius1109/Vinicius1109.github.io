@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+<title>Flappy Bob</title>
+
+<style>
+  
+  body{
+
+    background-color: rgb(255, 136, 0);
+  }
+
+  .imagem{
+    width: 100%;/*Largura Responsiva*/
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: -1;
+     
+    }
+
+    .jumbotron{
+      background-color: rgb(20, 20, 20);
+      color: white;
+      font-size: 20px;
+      margin-top: 40px;
+
+    }
+
+    
+</style>
+
+</head>
+<body>
+  
+  
+
+<main class="container text-center">
+
+<div class="jumbotron">
+  <hr class="my-10 bg-white">
+  <h1 class="display-1 text-light text-center p-5 rounded">Flappy Bob</h1>
+  <hr class="my-10 bg-white">
+
+  <h2 class="lead mt-4 mb-4">Flappy Bob, um jogo modificado por Estudantes do SENAI SC</h2>
+
+  <hr class="my-10 bg-white">
+  <p class="mt-4 mb-4"><strong>Inicialização: </strong>Primeiramente você receberá dicas ensiando como joga, o objetivo do jogo e como faz para vencer!</p>
+  <img src="imagens_a/dicas.png" width="500" height="300">
+
+  <hr class="my-10 bg-white">
+  <p class="mt-4 mb-3"><strong>Como aparecer: </strong>Basicamente esses são os códigos que faz aparecer todos os personagens e imagens que tem no jogo.</p>
+  <img src="imagens_a/imagens.png" width="500" height="300">
+
+  <hr class="my-10 bg-white">
+  <p class="mt-4 mb-3"><strong>Tela de Jogo: </strong>Esta é a tela de jogo, é aqui que você ajuda o Gary chegar até o Bob Esponja, ou não!</p>
+  <img src="imagens_a/mostra_jogo.png" width="500" height="300">
+
+  <hr class="my-10 bg-white">
+  <p class="mt-4 mb-3"><strong>Quando você Ganha: </strong>Quando você ganha, aparece uma tela de Ganhador, desejando-o Parabéns por sua conquista!</p>
+  <img src="imagens_a/ganhou.png" width="500" height="300">
+
+  <hr class="my-10 bg-white">
+  <p class="mt-4 mb-3"><strong>Quando você Perde: </strong>Porém, quando você perde, aparece na tela a felicidade do Plankton por capturar o Gary!</p>
+  <img src="imagens_a/perdeu.png" width="500" height="300">
+
+  <hr class="my-10 bg-white">
+  <p class="mt-4 mb-3"><strong>Como faz para Perder? </strong>Seu objeto é chegar a 2000 pontos sem tocar na Karen, caso toque nela, você perde!</p>
+  <img src="imagens_a/colisao_gary.png" width="500" height="300">
+
+  <hr class="my-10 bg-white">
+  <p class="mt-4 mb-3"><strong>Função Jogar: </strong>É ela que inicia todo o jogo, ativando todos as funções que o jogo deve executar para funcionar!</p>
+  <img src="imagens_a/jogar.PNG" width="500" height="300">
+
+  <hr class="my-10 bg-white">
+  <p class="mt-4 mb-3"><strong>Como o Gary se move? </strong>O Gary é movido pelas teclas W e S, para cima e para baixo, para poder desviar da Karen</p>
+  <img src="imagens_a/movimenta_gary.PNG" width="500" height="300">
+
+  <hr class="my-10 bg-white">
+  <p class="mt-4 mb-3"><strong>Karen tambem se movimentar! </strong>Ela se movimenta para poder ir atrás do Gary </p>
+  <img src="imagens_a/movimenta_karen.PNG" width="500" height="300">
+
+  <hr class="my-10 bg-white"> 
+  <p class="mt-4 mb-3"><strong>Como é adicionado ponto? </strong>O ponto é adicionado conforme o Gary consegue fugir da Karen, e quando ganha, como foi falado ali em cima, é chamado a função de Ganhou, ou infelizmente a Perdeu!</p>
+  <img src="imagens_a/adiciona_pontos.png" width="500" height="300">
+  <hr class="my-10 bg-white">
+
+</div>
+</main>
+  
+
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+</body>
+  
+  
+</html>
