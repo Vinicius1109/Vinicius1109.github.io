@@ -5,3 +5,11 @@ html, body {
 canvas {
   display: block;
 }
+
+main {
+  position: absolute;
+  top: 610px;
+  background-color:white;
+  width: 1280px;
+  height: 20px;
+}

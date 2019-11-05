@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -46,43 +47,44 @@
   <h2 class="lead mt-4 mb-4">Flappy Bob, um jogo modificado por Estudantes do SENAI SC</h2>
 
   <hr class="my-10 bg-white">
-  <p class="mt-4 mb-4"><strong>Inicialização: </strong>Primeiramente você receberá dicas ensiando como joga, o objetivo do jogo e como faz para vencer!</p>
+  <p class="mt-4 mb-4"><strong>Inicialização: </strong>Ao início do jogo, aparecerá uma tela
+  explicando o objetivo do jogo, como jogar, o que não se deve fazer para que não perca e a quantidade de pontos que você precisa para vencer.</p>
   <img src="imagens_a/dicas.png" width="500" height="300">
 
   <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Como aparecer: </strong>Basicamente esses são os códigos que faz aparecer todos os personagens e imagens que tem no jogo.</p>
+  <p class="mt-4 mb-3"><strong>Como aparecer: </strong>Os códigos a seguir foram os utilizados para a aparição dos personagens(Gary e Karen), a aparição das imagens utilizadas no jogo e os sons.</p>
   <img src="imagens_a/imagens.png" width="500" height="300">
 
   <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Tela de Jogo: </strong>Esta é a tela de jogo, é aqui que você ajuda o Gary chegar até o Bob Esponja, ou não!</p>
+  <p class="mt-4 mb-3"><strong>Tela de Jogo: </strong>Nesta imagem é possível ver como é dentro de jogo, o seu personagem, Gary, e os obstáculos, Karen, percebe-se também o plano de fundo, neste cenário será decidido se você ajudará Gary no seu objetivo ou não.</p>
   <img src="imagens_a/mostra_jogo.png" width="500" height="300">
 
   <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Quando você Ganha: </strong>Quando você ganha, aparece uma tela de Ganhador, desejando-o Parabéns por sua conquista!</p>
+  <p class="mt-4 mb-3"><strong>Quando você Ganha: </strong>Se você finalizar o jogo com sucesso,atigindo os 2(dois) mil pontos, aparecerá uma tela de vencedor, parabenizando-o pela sua conquista, finalizando assim o jogo de forma feliz.</p>
   <img src="imagens_a/ganhou.png" width="500" height="300">
 
   <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Quando você Perde: </strong>Porém, quando você perde, aparece na tela a felicidade do Plankton por capturar o Gary!</p>
+  <p class="mt-4 mb-3"><strong>Quando você Perde: </strong>Diferente de quando você ganha(obviamente), se por um acaso você atingir nos obstáculos do jogo, aparecerá uma tela de "Game Over" indicando que você fracassou em sua missão e Plankton venceu, finalizando o jogo de forma triste.</p>
   <img src="imagens_a/perdeu.png" width="500" height="300">
 
   <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Como faz para Perder? </strong>Seu objeto é chegar a 2000 pontos sem tocar na Karen, caso toque nela, você perde!</p>
+  <p class="mt-4 mb-3"><strong>Como faz para Perder? </strong>A forma de perder no jogo é simples, caso atinja algum dos obstáculos presente dentro do jogo, você perde e aparece a tela de "Game Over"</p>
   <img src="imagens_a/colisao_gary.png" width="500" height="300">
 
   <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Função Jogar: </strong>É ela que inicia todo o jogo, ativando todos as funções que o jogo deve executar para funcionar!</p>
+  <p class="mt-4 mb-3"><strong>Função Jogar: </strong>Essa função é uma das mais importantes pois controla muitas coisas do jogo, a aparição dos personagens e o movimento dos mesmos, a aparição do placar e a adição de pontos, além da colisão e da verificação de vencedor.</p>
   <img src="imagens_a/jogar.PNG" width="500" height="300">
 
   <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Como o Gary se move? </strong>O Gary é movido pelas teclas W e S, para cima e para baixo, para poder desviar da Karen</p>
+  <p class="mt-4 mb-3"><strong>Como o Gary se move? </strong>A função "movimentaGary" é a responsável pela movimentação do Gary, não é nada muito complexo, um simples código que ao apertar a tecla "W" ele vai para cima e ao apertar a tecla"S" ele vai para baixo.</p>
   <img src="imagens_a/movimenta_gary.PNG" width="500" height="300">
 
   <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Karen tambem se movimentar! </strong>Ela se movimenta para poder ir atrás do Gary </p>
+  <p class="mt-4 mb-3"><strong>Karen tambem se movimentar! </strong>A função abaixo é usada para movimentar a Karen, esse código é um pouco mais complexo que o outro pois temos no jogo 10(dez) Karen, inicialmente criamos um código para cada uma dela, mas tivemos que mudar depois para variáveis, fazendo assim, que a colisão com o Gary funcionasse e que elas pudessem estar sempre em sincronia.</p>
   <img src="imagens_a/movimenta_karen.PNG" width="500" height="300">
 
   <hr class="my-10 bg-white"> 
-  <p class="mt-4 mb-3"><strong>Como é adicionado ponto? </strong>O ponto é adicionado conforme o Gary consegue fugir da Karen, e quando ganha, como foi falado ali em cima, é chamado a função de Ganhou, ou infelizmente a Perdeu!</p>
+  <p class="mt-4 mb-3"><strong>Como é adicionado ponto? </strong>Os pontos são adicionados pelo "x" do Gary, já que é sempre o mesmo, ele só move o "y", adicionamos 1(um) ponto ao placar sempre que o "x" do Gary for 20. Se a pessoa alcançar 2(dois) mil pontos a função "GaryVenceu" é chamada e você vence caso contrário, se você bater, a função "garyPerdeu" é chamada e você perde.</p>
   <img src="imagens_a/adiciona_pontos.png" width="500" height="300">
   <hr class="my-10 bg-white">
 
