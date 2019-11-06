@@ -8,19 +8,11 @@
 <style>
   
   body{
-
-    background-color: rgb(255, 136, 0);
+    
+    background-image: url("imagens_a/bob.jpg");
   }
 
-  .imagem{
-    width: 100%;/*Largura Responsiva*/
-    height: 100%;
-    position: fixed;
-    top: 0; left: 0;
-    z-index: -1;
-     
-    }
-
+   
     .jumbotron{
       background-color: rgb(20, 20, 20);
       color: white;
@@ -29,6 +21,37 @@
 
     }
 
+    .hr{
+      background-color: rgb(235, 219, 52);
+
+    }
+
+    h1{
+  
+      text-align: center ;
+      color: black;
+      font-family:cursive;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-size: 100px ;
+      background-image: url("imagens_a/bob.jpg");
+
+
+    }
+
+    .imagem{
+      float: left;
+      padding-left: 70px;
+      padding-top: 30px;
+    }
+
+    .imagem2{
+      float: right;
+      padding-right: 70px;
+      padding-top: 30px;
+    }
+
+    
     
 </style>
 
@@ -40,53 +63,60 @@
 <main class="container text-center">
 
 <div class="jumbotron">
-  <hr class="my-10 bg-white">
-  <h1 class="display-1 text-light text-center p-5 rounded">Flappy Bob</h1>
-  <hr class="my-10 bg-white">
+  <hr class="hr">
+  <img class="imagem" src="imagens_a/bob_feliz.png" width="200" height="200">
+  <img class="imagem2" src="imagens_a/bob_feliz2.png" width="200" height="200">
+  <h1>Flappy Bob</h1>
+  <hr class="hr">
 
   <h2 class="lead mt-4 mb-4">Flappy Bob, um jogo modificado por Estudantes do SENAI SC</h2>
 
-  <hr class="my-10 bg-white">
+  <hr class="hr">
   <p class="mt-4 mb-4"><strong>Inicialização: </strong>Ao início do jogo, aparecerá uma tela
-  explicando o objetivo do jogo, como jogar, o que não se deve fazer para que não perca e a quantidade de pontos que você precisa para vencer.</p>
+  explicando o objetivo do jogo, como jogar, o que não se deve fazer para que não perca e a quantidade de pontos que você precisa para vencer!</p>
   <img src="imagens_a/dicas.png" width="500" height="300">
 
-  <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Como aparecer: </strong>Os códigos a seguir foram os utilizados para a aparição dos personagens(Gary e Karen), a aparição das imagens utilizadas no jogo e os sons.</p>
-  <img src="imagens_a/imagens.png" width="500" height="300">
+  <hr class="hr">
+  <p class="mt-4 mb-3"><strong>Como tudo aparece? </strong>Os códigos a seguir foram os utilizados para aparecer os personagens(Gary e Karen), e as imagens utilizadas no jogo e os sons.</p>
+  <img src="imagens_a/preload.png" width="500" height="300">
 
-  <hr class="my-10 bg-white">
+  <hr class="hr">
   <p class="mt-4 mb-3"><strong>Tela de Jogo: </strong>Nesta imagem é possível ver como é dentro de jogo, o seu personagem, Gary, e os obstáculos, Karen, percebe-se também o plano de fundo, neste cenário será decidido se você ajudará Gary no seu objetivo ou não.</p>
   <img src="imagens_a/mostra_jogo.png" width="500" height="300">
 
-  <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Quando você Ganha: </strong>Se você finalizar o jogo com sucesso,atigindo os 2(dois) mil pontos, aparecerá uma tela de vencedor, parabenizando-o pela sua conquista, finalizando assim o jogo de forma feliz.</p>
+  <hr class="hr">
+  <p class="mt-4 mb-3"><strong>Quando você Ganha? </strong>Se você finalizar o jogo com sucesso, atingindo os 2 mil pontos, aparecerá uma tela de vencedor, parabenizando-o pela sua conquista, finalizando assim o jogo de forma feliz.</p>
   <img src="imagens_a/ganhou.png" width="500" height="300">
 
-  <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Quando você Perde: </strong>Diferente de quando você ganha(obviamente), se por um acaso você atingir nos obstáculos do jogo, aparecerá uma tela de "Game Over" indicando que você fracassou em sua missão e Plankton venceu, finalizando o jogo de forma triste.</p>
+  <hr class="hr">
+  <p class="mt-4 mb-3"><strong>Quando você Perde: </strong>Diferente de quando você ganha, se por um acaso você tocar nos obstáculos do jogo, aparecerá uma tela de "Game Over" indicando que você fracassou em sua missão e o Plankton venceu, finalizando o jogo de forma triste.</p>
   <img src="imagens_a/perdeu.png" width="500" height="300">
 
-  <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Como faz para Perder? </strong>A forma de perder no jogo é simples, caso atinja algum dos obstáculos presente dentro do jogo, você perde e aparece a tela de "Game Over"</p>
+  <hr class="hr">
+  <p class="mt-4 mb-3"><strong>Como faz para Perder? </strong>A forma de perder no jogo é simples, caso atinja algum dos obstáculos do jogo, você perde!</p>
   <img src="imagens_a/colisao_gary.png" width="500" height="300">
 
-  <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Função Jogar: </strong>Essa função é uma das mais importantes pois controla muitas coisas do jogo, a aparição dos personagens e o movimento dos mesmos, a aparição do placar e a adição de pontos, além da colisão e da verificação de vencedor.</p>
+  <hr class="hr">
+  <p class="mt-4 mb-3"><strong>Função Jogar: </strong>Essa função é uma das mais importantes, pois controla praticamente o jogo inteiro, faz aparecer os personagens e o movimento dos mesmos, aparecer o placar e a adição de pontos, além da colisão e da verificação de vencedor.</p>
   <img src="imagens_a/jogar.PNG" width="500" height="300">
 
-  <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Como o Gary se move? </strong>A função "movimentaGary" é a responsável pela movimentação do Gary, não é nada muito complexo, um simples código que ao apertar a tecla "W" ele vai para cima e ao apertar a tecla"S" ele vai para baixo.</p>
+  <hr class="hr">
+  <p class="mt-4 mb-3"><strong>Como o Gary se move? </strong>A função "movimentaGary" é a responsável pela movimentação do Gary, não é nada muito complexo, um simples código que ao apertar a tecla "W" ele vai para cima e ao apertar a tecla "S" ele vai para baixo.</p>
   <img src="imagens_a/movimenta_gary.PNG" width="500" height="300">
 
-  <hr class="my-10 bg-white">
-  <p class="mt-4 mb-3"><strong>Karen tambem se movimentar! </strong>A função abaixo é usada para movimentar a Karen, esse código é um pouco mais complexo que o outro pois temos no jogo 10(dez) Karen, inicialmente criamos um código para cada uma dela, mas tivemos que mudar depois para variáveis, fazendo assim, que a colisão com o Gary funcionasse e que elas pudessem estar sempre em sincronia.</p>
+  <hr class="hr">
+  <p class="mt-4 mb-3"><strong>Karen também se movimenta! </strong>A função abaixo é usada para movimentar a Karen, esse código é um pouco mais complexo que o outro pois temos no jogo 10 Karens, inicialmente criamos um código para cada uma dela, mas tivemos que mudar depois para variáveis, fazendo assim, que a colisão com o Gary funcionasse e que elas pudessem estar sempre em sincronia.</p>
   <img src="imagens_a/movimenta_karen.PNG" width="500" height="300">
 
-  <hr class="my-10 bg-white"> 
-  <p class="mt-4 mb-3"><strong>Como é adicionado ponto? </strong>Os pontos são adicionados pelo "x" do Gary, já que é sempre o mesmo, ele só move o "y", adicionamos 1(um) ponto ao placar sempre que o "x" do Gary for 20. Se a pessoa alcançar 2(dois) mil pontos a função "GaryVenceu" é chamada e você vence caso contrário, se você bater, a função "garyPerdeu" é chamada e você perde.</p>
+  <hr class="hr"> 
+  <p class="mt-4 mb-3"><strong>Como é adicionado ponto? </strong>Os pontos são adicionados pelo "x" do Gary, já que é sempre o mesmo, ele só move o "y", adicionamos 1 ponto ao placar sempre que o "x" do Gary for 20. Se a pessoa alcançar 2 mil pontos a função "GaryVenceu" é chamada e você vence, caso contrário, se você bater, a função "garyPerdeu" é chamada e você perde.</p>
   <img src="imagens_a/adiciona_pontos.png" width="500" height="300">
-  <hr class="my-10 bg-white">
+  <hr class="hr">
+
+  
+  <p class="lead mt-4 mb-4"><strong>Criado por: </strong> Davi Gustavo, Felipe Cavichioli, Marcelo Hillesheim e Vinícius de Souza. <br> SENAI - Brusque/SC - 2019</p>
+  <hr class="hr">
+
 
 </div>
 </main>

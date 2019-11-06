@@ -2,7 +2,7 @@ let atropelaGary = false;
 let perdeu = false;
 
 function mostraGary(){
-  image(imgGary, xGary, yGary, 75, 75);
+  image(imgGary, xGary, yGary, 50, 50);
 }
 
 function movimentaGary(){

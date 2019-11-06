@@ -1,20 +1,3 @@
-let placarGary = 0;
-let imgLogo;
-
-let imgGary;
-let imgKaren = [];
-
-let xGary = 20;
-let yGary = 200;
-
-
-let yKaren = [-200, -250, -180, -210, -250, 350, 300, 400, 380, 300];
-let xKaren = [1330, 1630, 1970, 2230, 2530, 1330, 1630, 1970, 2230, 2530];
-let velocidadeKaren = [5, 5, 5, 5, 5, 5, 5, 5, 5, 5];
-
-
-let alturaTela = 600;
-let larguraTela = 1280;
 
 function preload(){
   imgGary = loadImage('imagens/gary.png');
