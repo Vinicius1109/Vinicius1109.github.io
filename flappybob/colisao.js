@@ -1,4 +1,4 @@
-function atropelamento() {
+function encosta() {
   for(let i = 0; i<imgKaren.length; i++){
     
     atropelaGary = 

@@ -4,13 +4,16 @@ function setup() {
   somTrilha.play();
   somTrilha.loop();
   somTrilha.setVolume(0.3);
+  
+
+  
 }
 
 function draw() {
-  if(frameCount < 400)
+  if(frameCount < 10)
     telaInicial();
   else
-    if(frameCount < 1000)
+    if(frameCount < 10)
       instruções();
   else
     if(!perdeu)

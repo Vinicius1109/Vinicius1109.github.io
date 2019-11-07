@@ -1,6 +1,6 @@
 
 function mostraPlacar(){
-  textSize(30);
+  textSize(50);
   fill("white");
   text(placarGary, larguraTela - 100, 60);
   
@@ -16,7 +16,7 @@ function jogar(){
   movimentaKaren();
   adicionaPontos();
   mostraPlacar();
-  atropelamento();
+  encosta();
   }else{
     //Verifica e mostra o campeão
     if(placarGary >= 2000 )
