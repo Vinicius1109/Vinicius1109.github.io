@@ -1,32 +1,29 @@
-function setup() {
-  createCanvas(larguraTela, alturaTela);
+function setup() { //Configura o Jogo
+  createCanvas(larguraTela, alturaTela); //Cria as Dimensões do Jogo
   
-  somTrilha.play();
-  somTrilha.loop();
-  somTrilha.setVolume(0.3);
-  
-
-  
+  somTrilha.play(); //Inicia uma musica de fundo
+  somTrilha.loop(); //Faz a musica ficar infinita
+  somTrilha.setVolume(0.3); //Reduz o volume da musica para 0.3
+   
 }
 
-function draw() {
-  if(frameCount < 10)
-    telaInicial();
+function draw() { //Desenha o formato do jogo
+  if(frameCount < 400) //Espera 8 segundos + ou -
+    telaInicial(); //Ativa a função da Tela Inicial
   else
-    if(frameCount < 10)
-      instruções();
+    if(frameCount < 1000) //Espera 18 segundos + ou -
+      instruções(); //Ativa a função das Instruções
   else
-    if(!perdeu)
-      jogar();     
+    if(!perdeu) //Verifica se o jogador não perdeu o Jogo
+      jogar(); //Caso não perdeu, é ativada a função Jogar    
 }
 
-function telaInicial(){
-  image(imgLogo,0, 0, 1280, 600);
-  
+function telaInicial(){ //Função que mostra a Tela Inicial do Jogo
+  image(imgLogo,0, 0, 1280, 600); //Define a foto de fundo, sua posição, altura e sua largura
 }
 
-function instruções(){
-  image(imgDicas,0, 0, 1280, 600);
+function instruções(){ //Função que mostra as Instruções
+  image(imgDicas,0, 0, 1280, 600); //Define a foto de fundo, sua posição, altura e sua largura
   
 }
 
