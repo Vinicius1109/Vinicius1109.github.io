@@ -17,6 +17,7 @@ function jogar(){ //Função que faz o jogo iniciar
   adicionaPontos(); //Ativa a função que conta os pontos do Gary
   mostraPlacar(); //Ativa a função que mostra os pontos do Gary
   encosta(); //Ativa a função que verifica se o Gary encostou em alguma Karen
+  cai();
   }else{
     //Verifica e mostra o campeão
     if(placarGary >= 2000 ) //Se os pontos do Gary chegarem a 2 mil
