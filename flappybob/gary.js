@@ -6,7 +6,7 @@ function mostraGary(){ //Faz o Gary aparecer no Jogo
 }
 
 function cai(){
-  if(xGary <= 20)
+  if(yGary < 550)
     yGary += 3;
 }
 
@@ -18,7 +18,7 @@ function movimentaGary(){ //Função que faz o Gary se mover
   }
   
   if(keyIsDown(83)){ //Quando a tecla S for pressiona
-    if(yGary < 500) //Só movimenta para baixo se o Gary estiver a 100 pixels do Chão
+    if(yGary <= 500) //Só movimenta para baixo se o Gary estiver a 100 pixels do Chão
       yGary += 5; //Faz com que o Gary desça 5 pixels
   }
 }

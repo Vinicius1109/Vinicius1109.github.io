@@ -27,6 +27,9 @@ function instruções(){ //Função que mostra as Instruções
   
 }
 
+if(yGary >= 500){
+    yGary -= 1;
+}
 
 
 
